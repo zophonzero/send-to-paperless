@@ -1,0 +1,3 @@
+include install.py
+recursive-include bin send-to-paperless
+recursive-include tests *.py

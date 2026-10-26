@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "send-to-paperless"
+version = "0.1.2"
+description = "Send PDFs and images to Paperless-ngx from the CLI and Flea"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+classifiers = [
+  "Environment :: Console",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+send-to-paperless = "send_to_paperless.cli:main"
+
+[project.urls]
+Repository = "https://github.com/zophonzero/send-to-paperless"
+Issues = "https://github.com/zophonzero/send-to-paperless/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
